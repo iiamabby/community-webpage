@@ -1,0 +1,125 @@
+ *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+header{
+    background-color: rgb(175, 175, 175);
+    height:25vh;
+    top:0;
+   
+}
+.text-center{
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+    font-family: Arial, sans-serif;
+    font-size: 30pt;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height:100%;
+}
+.text{
+    padding:20px;
+    width:40%;
+}
+#content{
+    margin-top:20px;
+}
+.item{
+    margin-bottom: 40px;
+}
+/* Slider */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+.slider-buttons {
+    position: relative;
+    width:100%;
+    height:100%;
+}
+#next-button{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    top:140px;
+    right:20px;
+    z-index: 10;
+    width:50px;
+    height:50px;
+}
+#prev-button{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    top:140px;
+    left:20px;
+    z-index: 10;
+    width:50px;
+    height:50px;
+}
+.slider {
+    width:auto;
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+  
+.slider img {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+/* goals */
+.goals-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin:110px;
+  }
+  
+  .goal-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .goal-line {
+    position: absolute;
+    border-top: 2px dotted #999;
+    width: 2px;
+    height: 50px;
+    top: calc(50% - 25px);
+  }
+  
+  .goal-circle:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  
